@@ -1,0 +1,57 @@
+### Hi there 👋
+
+<!--
+**Nikitarajpu/Nikitarajpu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
+using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace CSharp_Shell
+{
+	class stud
+	{
+		public string name;
+
+		public void display()
+		{
+			Console.WriteLine("I am an stud");
+		}
+
+	}
+	class exam : stud
+	{
+		public void getName()
+		{
+			Console.WriteLine("My paper name is " + name);
+		}
+	}
+
+	class Program
+	{
+
+		static void Main(string[] args)
+		{
+			exam s1 = new exam();
+			s1.name = "C#.Net";
+			s1.display();
+			s1.getName();
+
+			Console.ReadLine();
+		}
+
+	}
+}
+
